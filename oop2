@@ -1,0 +1,58 @@
+
+import java.time.LocalDate;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author User
+ */
+public class Main {
+    // Car.java
+class Car {
+    private String make;
+    private String model;
+    private double dailyRate;
+
+    // Constructor, getters, setters
+}
+
+// Customer.java
+class Customer {
+    private String name;
+    private String email;
+    private String phone;
+
+    // Constructor, getters, setters
+}
+
+// Rental.java
+class Rental {
+    private Car rentedCar;
+    private Customer customer;
+    private LocalDate startDate;
+    private LocalDate endDate;
+
+    // Constructor, getters, setters
+    public void calculateRentalFee() {
+        // Calculate fee based on rental duration and car's daily rate
+        // Example: return (endDate - startDate).getDays() * rentedCar.getDailyRate();
+    }
+}
+
+// Main.java
+public class Main {
+    public static void main(String[] args) {
+        // Example usage:
+        Car car1 = new Car("Toyota", "Camry", 50.0);
+        Customer customer1 = new Customer("John Doe", "john@example.com", "123-456-7890");
+        Rental rental1 = new Rental(car1, customer1, LocalDate.of(2024, 6, 1), LocalDate.of(2024, 6, 5));
+
+        System.out.println("Rental fee: $" + rental1.calculateRentalFee());
+    }
+}
+
+
